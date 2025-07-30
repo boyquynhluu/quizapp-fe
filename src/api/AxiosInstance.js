@@ -1,8 +1,9 @@
 import axios from "axios";
 import { navigateTo } from "../utils/navigation";
 
-const BASE_URL = "http://localhost:8080/";
-const URL_REFRESH_TOKEN = "api/auth/refresh";
+//const BASE_URL = "http://localhost:8080/";
+const BASE_URL = process.env.REACT_APP_API_URL;
+const URL_REFRESH_TOKEN = "/api/auth/refresh";
 
 const axiosInstance = axios.create({
     baseURL: BASE_URL,

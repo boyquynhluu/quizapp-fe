@@ -9,7 +9,7 @@ const getAllQuiz = async () => {
             return;
         }
 
-        const response = await axios.get("api/v1/quiz",
+        const response = await axios.get("/api/v1/quiz",
             {
                 headers: { Authorization: `Bearer ${rawToken}` }
             },
@@ -60,7 +60,7 @@ const submitCreateQuiz = async (formData) => {
             return;
         }
 
-        const response = await axios.post("api/v1/quiz/create", formData, {
+        const response = await axios.post("/api/v1/quiz/create", formData, {
             headers: { "Content-Type": "multipart/form-data" },
             withCredentials: true,
             timeout: 10000, // tăng timeout lên 10s
