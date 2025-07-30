@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quiz-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.quiz-card:hover {
+    transform: scale(1.01);
+}
+
+.quiz-title {
+    margin-bottom: 16px;
+    color: #343a40;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.submit-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #084298;
+}
+.quiz-container {
+    background-color: rgba(255, 255, 255, 0.9); /* trắng mờ */
+    padding: 24px;
+    max-width: 800px;
+    margin: 180px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* 👇 Cho điện thoại hoặc màn hình nhỏ */
+@media (max-width: 768px) {
+  .quiz-container {
+      margin: 262px 16px 24px; /* giảm margin-top + padding ngang nhỏ lại */
+  }
+}
+.submit-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #1d976c, #93f9b9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-button:hover {
+    background: linear-gradient(45deg, #159957, #8fd3f4);
+    transform: scale(1.05);
+}
+
+.quiz-pointer {
+    cursor: pointer;
+}
+.quiz-pointer:hover {
+    background-color: #8fd3f4;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-4px); }
+    40% { transform: translateX(4px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(4px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .quiz-card.shake {
+    animation: shake 0.3s ease;
+  }
+  .quiz-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .quiz-card.warning {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    background-color: #fff5f5;
+  }
+
+  .welcome-text {
+    text-align: right;
+    padding: 30px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    line-height: 0.5;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    border-radius: 12px;
+
+    position: fixed;
+    top: 60px; /* đúng bằng chiều cao taskbar */
+    left: 0;
+    right: 0;
+    background-color: #ecf0f1; /* nền nổi bật */
+    padding: 10px 20px;
+    z-index: 999; /* dưới taskbar nhưng trên nội dung */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .quiz-result {
+    color: #27ae60; /* màu xanh lá đậm cho kết quả */
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  
+  .welcome-username {
+    color: #2980b9; /* xanh biển cho tên user */
+    float: left;
+  }
+
+  .welcome-text-fixed {
+    position: fixed; 
+    top: 50px;
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.start-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 18px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #45a049;
+}
+
+.button-timer {
+  min-width: 100px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  flex: 0 0 auto
+}
+
+input:disabled, .button-timer {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

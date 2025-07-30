@@ -1,0 +1,61 @@
+/* .taskbar {
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  } */
+  
+  .taskbar {
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    position: fixed;       /* <-- Giúp luôn cố định */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;         /* Đảm bảo nằm trên cùng */
+  }
+
+  .taskbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+  }
+
+  .floatRight {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .taskbar-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .taskbar-nav a:hover {
+    color: #1abc9c;
+  }
+  
+  .taskbar-user {
+    font-size: 14px;
+    font-style: italic;
+  }  
+
+  .taskbar-nav-div {
+    margin-right: 50px;
+  }
+
+  .logout {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+  }

@@ -1,0 +1,17 @@
+.verify-container {
+    height: 100vh;
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .verify-card {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .back-login {
+      color: blue !important;
+  }
+  

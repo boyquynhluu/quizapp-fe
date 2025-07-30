@@ -1,0 +1,87 @@
+.modal-diem-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-diem-content {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh;            
+    overflow-y: auto;           
+    position: relative;
+    animation: fadeInScale 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .close:hover {
+    color: #f44336; /* đỏ nhấn mạnh */
+  }
+  
+  .diem-modal-container {
+    margin-top: 20px;
+  }
+  
+  .diem-modal {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .diem-modal thead {
+    background-color: #1976d2; /* màu xanh đậm */
+    color: white;
+  }
+  
+  .diem-modal th,
+  .diem-modal td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .diem-modal tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  

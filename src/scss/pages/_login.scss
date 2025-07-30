@@ -1,0 +1,43 @@
+.page-login, .page-notfound, .verify-token {
+    background-image: url('../../assets/images/login.jpg');
+
+    .login-form-wrapper {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .login-form {
+            width: 90%;
+    
+            .login-form-title {
+                text-align: center;
+                font-size: 24px;
+                margin-bottom: 25px;
+                font-weight: 700;
+                color: #ffffff;
+            }
+    
+            .login-options {
+                .checkbox {
+                    label {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        button[disabled] {
+            cursor: not-allowed;
+            pointer-events: all; /* Cho phép áp dụng cursor */
+            opacity: 0.6;
+        }
+    
+        @media (min-width: 768px) {
+            .login-form {
+                width: 400px;
+            }
+        }
+    }     
+}
