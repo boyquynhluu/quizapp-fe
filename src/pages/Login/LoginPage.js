@@ -19,7 +19,7 @@ function LoginPage() {
     const handleLogin = async (e) => {
         e.preventDefault();
         setLoading(true);
-        await delay(500);
+        await delay(300);
 
         try {
             const result = await AuthService.login(usernameOrPassword, password);
